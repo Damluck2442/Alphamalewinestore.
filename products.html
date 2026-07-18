@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Bella PeeStore</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            🍷
+            <h1>BellaS Pee store</h1>
+            <p>Premium Wines, Premium Experience</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </a>
+
+    </nav>
+
+    <!-- Products Section -->
+    <div class="product-card">
+
+        <img src="../images/four-cousins-red.jpg"
+             alt="Four Cousins Red">
+
+        <h3>Four Cousins Red</h3>
+
+        <p class="price">₦8,500</p>
+
+        <div class="product-buttons">
+
+            <button onclick="addToCart('Four Cousins Red',8500)">
+                🛒 Add to Cart
+            </button>
+
+            <a href="red-wines.html">
+
+                <button class="view-btn">
+                    👀 View Product
+                </button>
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <section class="featured">
+
+        <h2>Shop by Category</h2>
+        <div class="search-box">
+
+            <input type="text"
+                   id="searchInput"
+                   placeholder="Search for wine, whiskey, champagne..."
+                   onkeyup="searchProducts()">
+
+        </div>
+
+        <div class="categories">
+
+            <div class="category">
+                🍷
+                <h3>Red Wines</h3>
+                <p>Explore premium red wines.</p>
+                <button onclick="addToCart('Red Wines',8500)">
+
+                    🛒 Add to Cart
+
+                </button>
+               
+                <br><br>
+
+                <a href="red-wines.html">
+                    <button class="view-btn">
+                        👀 View Products
+                    </button>
+            </div>
+
+            <div class="category">
+                🥂
+                <h3>White Wines</h3>
+                <p>Fresh and elegant white wines.</p>
+                <button onclick="addToCart('White Wines',8500)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="category">
+                🌹
+                <h3>Rosé Wines</h3>
+                <p>Perfect for celebrations.</p>
+                <button onclick="addToCart('Rosé Wines',8500)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="category">
+                🍾
+                <h3>Champagne</h3>
+                <p>Luxury champagne collection.</p>
+                <button onclick="addToCart('Champagne',8500)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="category">
+                🥃
+                <h3>Whiskey</h3>
+                <p>Premium whiskey brands.</p>
+                <button onclick="addToCart('Whiskey', 8500)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="category">
+                🥃
+                <h3>Cognac</h3>
+                <p>Finest French cognacs.</p>
+                <button onclick="addToCart('Cognac',8500)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="category">
+                🍸
+                <h3>Vodka</h3>
+                <p>Top quality vodka selection.</p>
+                <button onclick="addToCart('Vodka',8500)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="category">
+                🍹
+                <h3>Gin</h3>
+                <p>Classic and premium gin.</p>
+                <button onclick="addToCart('Gin',8500)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="category">
+                🥤
+                <h3>Soft Drinks</h3>
+                <p>Soft drinks and mixers.</p>
+                <button onclick="addToCart('Soft Drinks',8500)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>Alpha Male Wine Store</h3>
+
+        <h4>Bella PeeStore</h4>
+
+        <p>📍 Apete Oja, Off Awotan, Apete, Ibadan</p>
+
+        <p>📞 08076542317</p>
+
+        <p>📱 09076542319</p>
+
+        <p>📧 AlphaMaleWineStore@yahoo.com</p>
+
+        <p>© 2026 Alpha Male Wine Store. All Rights Reserved.</p>
+
+    </footer>
+    <a href="https://wa.me/2348076542317?text=Hello%20Alpha%20Male%20Wine%20Store!%20I%20would%20like%20to%20place%20an%20order."
+   class="whatsapp-button"
+   target="_blank">
+    💬 WhatsApp Us
+</a>
+      <a href="https://wa.me/2348076542317?text=Hello..."
+   class="whatsapp-button"
+   target="_blank">
+    💬 WhatsApp Us
+    
+    </a>
+
+    <!-- JavaScript -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
